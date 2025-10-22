@@ -1,0 +1,7 @@
+venv
+.idea
+*.zip
+*.h5
+tmp
+*.csv
+*.json
