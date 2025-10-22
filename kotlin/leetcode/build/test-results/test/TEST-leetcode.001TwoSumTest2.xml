@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="leetcode.001TwoSumTest2" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-10-14T11:40:23" hostname="MacBookPro.lan" time="0.024">
+  <properties/>
+  <testcase name="testExample()" classname="leetcode.001TwoSumTest2" time="0.021"/>
+  <testcase name="testExample2()" classname="leetcode.001TwoSumTest2" time="0.001"/>
+  <testcase name="testExample3()" classname="leetcode.001TwoSumTest2" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
