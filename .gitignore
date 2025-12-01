@@ -1,6 +1,9 @@
 # Brain Massage - Multi-language Project
 # Covers: Kotlin, Go, Haskell
 
+*.txt
+*.md
+
 ### Kotlin ###
 *.class
 *.jar
