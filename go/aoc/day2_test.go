@@ -57,6 +57,30 @@ func TestSolveDay2_SolveDay2Part1(t *testing.T) {
 	}
 }
 
+func TestSolveDay2_IsInvalidForPart2(t *testing.T) {
+	valid := 12312
+
+	if IsInvalidPart2(valid) {
+		t.Errorf("%v is invalid", valid)
+	}
+
+	valid = 1
+
+	if IsInvalidPart2(valid) {
+		t.Errorf("%v is invalid", valid)
+	}
+
+	invalid := 1212
+	if !IsInvalidPart2(invalid) {
+		t.Errorf("%v is valid", valid)
+	}
+
+	invalid = 123123123
+	if !IsInvalidPart2(invalid) {
+		t.Errorf("%v is valid", valid)
+	}
+}
+
 func TestSolveDay2_InvalidIdsPart2(t *testing.T) {
 
 	tests := []struct {
@@ -85,7 +109,7 @@ func TestSolveDay2_InvalidIdsPart2(t *testing.T) {
 
 func TestSolveDay2_SolveDay2Part2(t *testing.T) {
 	input := "11-22,95-115,998-1012,1188511880-1188511890,222220-222224,1698522-1698528,446443-446449,38593856-38593862,565653-565659,824824821-824824827,2121212118-2121212124"
-	got := SolveDay2(input, IsInvalidPart1)
+	got := SolveDay2(input, IsInvalidPart2)
 	want := 4174379265
 
 	if got != want {

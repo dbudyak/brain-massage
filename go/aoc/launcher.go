@@ -10,7 +10,6 @@ import (
 const TODAY = 2
 
 func main() {
-
 	days := map[int]string{
 		1: "Day 1: Secret Entrance",
 		2: "Day 2: Gift Shop",
@@ -19,7 +18,7 @@ func main() {
 	fmt.Println(days[TODAY])
 	fmt.Println()
 
-	input := io.MustReadInput(TODAY)
+	input := strings.TrimSpace(io.MustReadInput(TODAY))
 
 	lines := strings.Split(strings.TrimSpace(input), "\n")
 	fmt.Printf("Read %d lines from input1.txt\n", len(lines))
