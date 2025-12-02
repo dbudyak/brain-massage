@@ -1,35 +1,14 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
-
-	"aoc.test/io"
 )
 
 const (
 	left  int = -1
 	right int = 1
 )
-
-func main() {
-	fmt.Println("Day 1: Secret Entrance")
-	fmt.Println()
-
-	input := io.MustReadInput(1)
-
-	lines := strings.Split(strings.TrimSpace(input), "\n")
-	fmt.Printf("Read %d lines from input1.txt\n", len(lines))
-	fmt.Println()
-
-	part1 := SolveDay1(input)
-	fmt.Printf("Password (Part 1): %d\n", part1)
-	fmt.Println()
-
-	part2 := SolveDay1Part2(input)
-	fmt.Printf("Password (Part 2): %d\n", part2)
-}
 
 func Rotate(position int, distance int, direction int) int {
 	const dialSize = 100
