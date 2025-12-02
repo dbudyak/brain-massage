@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func SolveDay2Part1(input string) int {
+func SolveDay2(input string, isInvalid func(id int) bool) int {
 
 	totalSum := 0
 
@@ -18,7 +18,7 @@ func SolveDay2Part1(input string) int {
 		end, _ := strconv.Atoi(minMax[1])
 
 		for id := start; id <= end; id++ {
-			if IsInvalid(id) {
+			if isInvalid(id) {
 				fmt.Printf("id=%d\n", id)
 				totalSum += id
 			}
@@ -28,17 +28,7 @@ func SolveDay2Part1(input string) int {
 	return totalSum
 }
 
-func Sum(integers [][]int) int {
-	total := 0
-	for _, i := range integers {
-		for _, j := range i {
-			total += j
-		}
-	}
-	return total
-}
-
-func IsInvalid(id int) bool {
+func IsInvalidPart1(id int) bool {
 	digits := len(fmt.Sprintf("%d", id))
 	if digits%2 != 0 {
 		return false
@@ -51,12 +41,6 @@ func IsInvalid(id int) bool {
 	return left == right
 }
 
-func GetInvalidIds(start int, end int) []int {
-	invalidIds := make([]int, 0)
-	for i := start; i <= end; i++ {
-		if IsInvalid(i) {
-			invalidIds = append(invalidIds, i)
-		}
-	}
-	return invalidIds
+func IsInvalidPart2(id int) bool {
+	return false
 }
