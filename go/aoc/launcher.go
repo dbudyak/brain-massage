@@ -7,13 +7,14 @@ import (
 	"aoc.test/io"
 )
 
-const TODAY = 3
+const TODAY = 4
 
 func main() {
 	days := map[int]string{
 		1: "Day 1: Secret Entrance",
 		2: "Day 2: Gift Shop",
 		3: "Day 3: Lobby",
+		4: "Day 4: Printing Department",
 	}
 
 	fmt.Println(days[TODAY])
@@ -50,6 +51,14 @@ func main() {
 
 			part2 := SolveDay3Part2(input)
 			fmt.Printf("Max joltage for Part 2: %d\n", part2)
+		}
+	case 4:
+		{
+			part1 := SolveDay4Part1(input)
+			fmt.Printf("%d rolls of paper\n", part1)
+
+			part2 := SolveDay4Part2(input)
+			fmt.Printf("%d rolls of paper\n", part2)
 		}
 	}
 }
