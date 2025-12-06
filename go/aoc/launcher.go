@@ -7,7 +7,7 @@ import (
 	"aoc.test/io"
 )
 
-const TODAY = 5
+const TODAY = 6
 
 func main() {
 	days := map[int]string{
@@ -15,6 +15,8 @@ func main() {
 		2: "Day 2: Gift Shop",
 		3: "Day 3: Lobby",
 		4: "Day 4: Printing Department",
+		5: "Day 5: Printing Department",
+		6: "Day 6: Trash Compactor",
 	}
 
 	fmt.Println(days[TODAY])
@@ -68,5 +70,14 @@ func main() {
 			part2 := SolveDay5Part2(input)
 			fmt.Printf("\n%d fresh ids", part2)
 		}
+	case 6:
+		{
+			part1 := SolveDay6Part1(input)
+			fmt.Printf("\nGrand total is %d", part1)
+
+			//part2 := SolveDay6Part2(input)
+			//fmt.Printf("\nGrand total is %d", part2)
+		}
 	}
+
 }
