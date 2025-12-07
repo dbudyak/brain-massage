@@ -7,7 +7,7 @@ import (
 	"aoc.test/io"
 )
 
-const TODAY = 6
+const TODAY = 7
 
 func main() {
 	days := map[int]string{
@@ -77,6 +77,11 @@ func main() {
 
 			part2 := SolveDay6Part2(io.MustReadInput(TODAY))
 			fmt.Printf("\nGrand total p2 is %d", part2)
+		}
+	case 7:
+		{
+			part1 := SolveDay7Part1(input)
+			fmt.Printf("\nBeam split %d times", part1)
 		}
 	}
 
