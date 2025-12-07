@@ -73,10 +73,10 @@ func main() {
 	case 6:
 		{
 			part1 := SolveDay6Part1(input)
-			fmt.Printf("\nGrand total is %d", part1)
+			fmt.Printf("\nGrand total p1 is %d", part1)
 
-			//part2 := SolveDay6Part2(input)
-			//fmt.Printf("\nGrand total is %d", part2)
+			part2 := SolveDay6Part2(io.MustReadInput(TODAY))
+			fmt.Printf("\nGrand total p2 is %d", part2)
 		}
 	}
 
