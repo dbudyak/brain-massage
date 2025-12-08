@@ -17,6 +17,7 @@ func main() {
 		4: "Day 4: Printing Department",
 		5: "Day 5: Printing Department",
 		6: "Day 6: Trash Compactor",
+		7: "Day 7: Laboratories",
 	}
 
 	fmt.Println(days[TODAY])
@@ -82,6 +83,9 @@ func main() {
 		{
 			part1 := SolveDay7Part1(input)
 			fmt.Printf("\nBeam split %d times", part1)
+
+			part2 := SolveDay7Part2(input)
+			fmt.Printf("\n%d timelines", part2)
 		}
 	}
 

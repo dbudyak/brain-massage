@@ -2,8 +2,7 @@ package main
 
 import "testing"
 
-func TestDay7Part1(t *testing.T) {
-	input := `.......S.......
+const input = `.......S.......
 ...............
 .......^.......
 ...............
@@ -20,8 +19,20 @@ func TestDay7Part1(t *testing.T) {
 .^.^.^.^.^...^.
 ...............`
 
+func TestDay7Part1(t *testing.T) {
+
 	got := SolveDay7Part1(input)
 	want := 21
+
+	if got != want {
+		t.Errorf("SolveDay7Part1() = %d, want %d", got, want)
+	}
+}
+
+func TestDay7Part2(t *testing.T) {
+
+	got := SolveDay7Part2(input)
+	want := 40
 
 	if got != want {
 		t.Errorf("SolveDay7Part1() = %d, want %d", got, want)
