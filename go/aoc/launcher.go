@@ -7,19 +7,20 @@ import (
 	"aoc.test/io"
 )
 
-const TODAY = 9
+const TODAY = 10
 
 func main() {
 	days := map[int]string{
-		1: "Day 1: Secret Entrance",
-		2: "Day 2: Gift Shop",
-		3: "Day 3: Lobby",
-		4: "Day 4: Printing Department",
-		5: "Day 5: Printing Department",
-		6: "Day 6: Trash Compactor",
-		7: "Day 7: Laboratories",
-		8: "Day 8: Playground",
-		9: "Day 9: Movie Theater",
+		1:  "Day 1: Secret Entrance",
+		2:  "Day 2: Gift Shop",
+		3:  "Day 3: Lobby",
+		4:  "Day 4: Printing Department",
+		5:  "Day 5: Printing Department",
+		6:  "Day 6: Trash Compactor",
+		7:  "Day 7: Laboratories",
+		8:  "Day 8: Playground",
+		9:  "Day 9: Movie Theater",
+		10: "Day 10: Factory",
 	}
 
 	fmt.Println(days[TODAY])
@@ -101,6 +102,11 @@ func main() {
 		{
 			part1 := SolveDay9Part1(input)
 			fmt.Printf("\nLargest area is %d", part1)
+		}
+	case 10:
+		{
+			part1 := SolveDay10Part1(input)
+			fmt.Printf("\n%d", part1)
 		}
 	}
 
